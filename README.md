@@ -94,6 +94,8 @@ These instructions will help you set up and run the project on your local machin
 
 10. Access the application in your web browser: http://localhost:8000
 
+11. If you would like to see the demo the follow link https://saquib.blog/travel/public/
+
 ### Usage
 
 - Register as a customer to book travel packages.
