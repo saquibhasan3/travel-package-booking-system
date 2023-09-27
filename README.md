@@ -69,4 +69,26 @@ These instructions will help you set up and run the project on your local machin
 
 8. Access the application in your web browser: http://localhost:8000
 
+### Usage
 
+- Register as an agent or customer to access the respective dashboards.
+- Agents can add, edit, and delete travel packages, as well as view customer bookings.
+- Customers can view and book available travel packages.
+
+### Deployment
+
+To deploy this project to a production environment, you'll need to set up a web server (e.g., Apache or Nginx) and configure it to serve the project's public directory. Don't forget to update your `.env` file with production settings and consider using HTTPS for secure communication.
+
+## Contributing
+
+We welcome contributions from the community. If you have any ideas, improvements, or bug fixes, please open an issue or submit a pull request.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- Laravel community for providing a powerful PHP framework.
+- Bootstrap for responsive design components.
+- [Font Awesome](https://fontawesome.com/) for icons.
