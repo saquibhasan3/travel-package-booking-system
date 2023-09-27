@@ -30,6 +30,11 @@
                         </form>
                         <div style="clear:both"></div>
                         <hr>
+                        <p class="product-title mt-4 mb-1">{{ __('Duration') }}</p>
+                        <p class="product-description mb-4">
+                            {{ $travel_package->duration }}
+                        </p>
+                        <hr>
                         <p class="product-title mt-4 mb-1">{{ __('Destination Details') }}</p>
                         <p class="product-description mb-4">
                             {{ $travel_package->destination }}
