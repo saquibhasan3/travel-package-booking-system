@@ -58,6 +58,5 @@
                     startDate: new Date()
                 });
             });
-            console.log('Test section');
         </script>
     @endsection
