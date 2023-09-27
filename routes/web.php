@@ -19,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('/search',[HomeController::class,'index'])->name('search');
 Route::get('travel_package/{package_slug}', [HomeController::class, 'travel_package'])->name('travel_package.details');
