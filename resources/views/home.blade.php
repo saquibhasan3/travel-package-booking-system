@@ -20,7 +20,6 @@
                                             <div class="card-body mt-3 mb-3">
                                                 <div class="row">
                                                     <div class="col-12">
-
                                                         <h4 class="card-title">
                                                             <a href="{{ route('travel_package.details', ['package_slug' => $package->package_slug]) }}" class="nostyle">
                                                                 {{ $package->package_name }}    
