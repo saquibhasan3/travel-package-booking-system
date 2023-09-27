@@ -24,7 +24,7 @@
                                         <tr>
                                             <td>{{ $package->package_name }}</td>
                                             <td>{{ $package->destination }}</td>
-                                            <td>{{ $package->price }}</td>
+                                            <td><i class="fa fa-inr"></i> {{ $package->price }}</td>
                                             <td>{{ $package->duration }}</td>
                                             <td>{!!  $package->bookings()->exists() ? '<a href="javascript:;" class="btn btn-sm btn-success bookingsDetailModalButton" data-bs-toggle="modal" data-bs-target="#packageDetailModal" data-package="'.$package->id.'">'.count($package->bookings).'</a>' : 0 !!} </td>
                                         </tr>
