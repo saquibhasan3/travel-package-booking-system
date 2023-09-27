@@ -32,14 +32,17 @@ class DashboardController extends Controller
         <tbody>';
         if ($package->bookings()->exists()):
             foreach ($package->bookings as $booking) :
-                $html .= '<th scope="row">'. $booking->booking_number .'</th>
-                <td>'. $booking->name .'</td>
-                <td>'. $booking->contact .'</td>
-                <td>'. date('d-m-Y', strtotime($booking->travel_date)) .'</td>
-                <td>'. $booking->total_person .'</td>
-                <td><i class="fa fa-inr"></i>'. $booking->total_amount .'</td>';
+                $html .= '<tr>
+                    <th scope="row">'. $booking->booking_number .'</th>
+                    <td>'. $booking->name .'</td>
+                    <td>'. $booking->contact .'</td>
+                    <td>'. date('d-m-Y', strtotime($booking->travel_date)) .'</td>
+                    <td>'. $booking->total_person .'</td>
+                    <td><i class="fa fa-inr"></i>'. $booking->total_amount .'</td>
+                </tr>';
             endforeach;
         endif;
+        $html .= '</tbody></table>';
         echo $html;
     }
 }

@@ -11,7 +11,7 @@
                             <div class="container m-4">
                                 <div class="row">
                                     @foreach ($travel_packages as $package)
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 mt-2">
 
                                         <div class="card border-0 rounded-0 shadow">
                                             <a href="{{ route('travel_package.details', ['package_slug' => $package->package_slug]) }}">
