@@ -61,6 +61,8 @@ These instructions will help you set up and run the project on your local machin
     cp .env.example .env
 
 5. Create a new MySQL database and update the .env file with your database configuration.
+
+    --dotenv
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
