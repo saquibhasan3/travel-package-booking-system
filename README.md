@@ -75,17 +75,24 @@ These instructions will help you set up and run the project on your local machin
    ```bash
    php artisan migrate
 
-7. Generate the application key:
+7. Run seeders to create agent user:
+
+   Below command will create agent with email `agent@gmail.com` and password `agent123`.
+
+   ```bash
+   php artisan db:seed
+
+8. Generate the application key:
 
    ```bash
    php artisan key:generate
 
-8. Start the development server:
+9. Start the development server:
 
    ```bash
    php artisan serve
 
-9. Access the application in your web browser: http://localhost:8000
+10. Access the application in your web browser: http://localhost:8000
 
 ### Usage
 
