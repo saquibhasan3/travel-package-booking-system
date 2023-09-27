@@ -13,7 +13,7 @@
                                     @foreach ($travel_packages as $package)
                                     <div class="col-md-4">
 
-                                        <div class="card border-0 rounded-0 shadow" style="width: 18rem;">
+                                        <div class="card border-0 rounded-0 shadow">
                                             <a href="{{ route('travel_package.details', ['package_slug' => $package->package_slug]) }}">
                                                 <img src="{{ asset('uploads/'.$package->package_image) }}" onerror="this.src='{{ asset('assets/images/no-image.jpg') }}'" class="card-img-top rounded-0" alt="Travel Package Image">
                                             </a>
@@ -22,7 +22,7 @@
                                                     <div class="col-12">
                                                         <h4 class="card-title">
                                                             <a href="{{ route('travel_package.details', ['package_slug' => $package->package_slug]) }}" class="nostyle">
-                                                                {{ $package->package_name }}    
+                                                                {{ $package->package_name }}
                                                             </a>
                                                         </h4>
                                                     </div>
