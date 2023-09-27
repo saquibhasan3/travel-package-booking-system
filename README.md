@@ -50,24 +50,40 @@ These instructions will help you set up and run the project on your local machin
    ```bash
    composer install
 
-4. Create a new MySQL database and update the .env file with your database configuration.
+4. Setting Up the .env File
+    Before you can run the application, you need to configure your environment variables in the `.env` file. Follow these steps:
 
-5. Run migrations to create the necessary database tables:
+    1. **Copy the .env.example file:**
+
+    In the project root directory, you'll find a file named `.env.example`. Make a copy of this file and rename it to `.env`.
+
+    ```bash
+    cp .env.example .env
+
+5. Create a new MySQL database and update the .env file with your database configuration.
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_username
+    DB_PASSWORD=your_database_password
+
+6. Run migrations to create the necessary database tables:
 
    ```bash
    php artisan migrate
 
-6. Generate the application key:
+7. Generate the application key:
 
    ```bash
    php artisan key:generate
 
-7. Start the development server:
+8. Start the development server:
 
    ```bash
    php artisan serve
 
-8. Access the application in your web browser: http://localhost:8000
+9. Access the application in your web browser: http://localhost:8000
 
 ### Usage
 
