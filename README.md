@@ -71,7 +71,7 @@ These instructions will help you set up and run the project on your local machin
 
 ### Usage
 
-- Register as an agent or customer to access the respective dashboards.
+- Register as a customer to book travel packages.
 - Agents can add, edit, and delete travel packages, as well as view customer bookings.
 - Customers can view and book available travel packages.
 
