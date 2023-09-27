@@ -42,6 +42,10 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+                            <form class="d-flex" action="{{ route('search') }}" role="search">
+                                <input class="form-control me-2" type="search" name="search" value="{{ app('request')->input('search') }}" placeholder="{{ __('Package Name/Destination') }}" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
                             @if(Auth::guard('agent')->check())
                                 <li class="nav-item  {{ request()->is('agent/travel_package/create') || request()->is('agent/travel_package/*/edit') ? 'active' : '' }}">
                                     <a class="nav-link" href="{{ url('agent/travel_package/create') }}">

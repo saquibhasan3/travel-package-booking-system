@@ -12,14 +12,20 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         if (env('APP_NAME') != "Travel Package Booking System") {
             $this->changeEnvironmentVariable('APP_NAME', 'Travel Package Booking System');
         }
-        $travel_packages = TravelPackage::all();
+        if ($request->search) {
+            $travel_packages = TravelPackage::where('package_name', 'like', '%'.$request->search.'%')->orWhere('destination', 'like', '%'.$request->search.'%')->get();
+        }else{
+            $travel_packages = TravelPackage::all();
+        }
         return view('home', compact('travel_packages'));
     }
+
+
 
     public function travel_package(Request $request)
     {
